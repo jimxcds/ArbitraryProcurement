@@ -13,7 +13,7 @@ namespace ArbitraryProcurement
     {
         static void Main(string[] args)
         {
-            string apiKey = "AIzaSyCqP--dX4KiEHR_xSgxarLbXjoxacxN4nM";
+            string apiKey = "";
             Console.WriteLine("Welcome to jimxcds' Arbitrary Procurement terminal for youtube videos");
             EnterCommand:
             Console.Write("Enter a command:");
