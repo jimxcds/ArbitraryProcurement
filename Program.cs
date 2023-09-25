@@ -400,6 +400,7 @@ namespace ArbitraryProcurement
                     }
                     int videoNumber = rand.Next(searchResponseList.Count);
                     var searchResult = searchResponseList[videoNumber];
+                    Console.WriteLine("\n");
                     Console.WriteLine("Link: https://youtu.be/" + searchResult.Id.VideoId);
                     GetVideoData(apiKey, searchResult.Id.VideoId);
                 }
