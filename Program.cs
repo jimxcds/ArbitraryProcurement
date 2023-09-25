@@ -13,7 +13,8 @@ namespace ArbitraryProcurement
     {
         static void Main(string[] args)
         {
-            string apiKey = "";
+            Console.ForegroundColor = ConsoleColor.White;
+            string apiKey = "AIzaSyCqP--dX4KiEHR_xSgxarLbXjoxacxN4nM";
             Console.WriteLine("Welcome to jimxcds' Arbitrary Procurement terminal for youtube videos");
             EnterCommand:
             Console.Write("Enter a command:");
@@ -51,7 +52,7 @@ namespace ArbitraryProcurement
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Enter integers only");
-                        Console.ForegroundColor = default;
+                        Console.ForegroundColor = ConsoleColor.White;
                         goto GetNumOfVideos;
                     }
 
@@ -63,7 +64,7 @@ namespace ArbitraryProcurement
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Invalid command");
-                    Console.ForegroundColor = default;
+                    Console.ForegroundColor = ConsoleColor.White;
                     break;
             }
             goto EnterCommand;
@@ -202,7 +203,7 @@ namespace ArbitraryProcurement
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Enter integers only");
-                Console.ForegroundColor = default;
+                Console.ForegroundColor = ConsoleColor.White;
                 goto CrawlNumber;
             }
 
@@ -238,7 +239,7 @@ namespace ArbitraryProcurement
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Invalid command");
-                        Console.ForegroundColor = default;
+                        Console.ForegroundColor = ConsoleColor.White;
                         goto VideoCategory;
                 }
             }
@@ -394,7 +395,7 @@ namespace ArbitraryProcurement
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("No results");
-                        Console.ForegroundColor = default;
+                        Console.ForegroundColor = ConsoleColor.White;
                         return;
                     }
                     int videoNumber = rand.Next(searchResponseList.Count);
